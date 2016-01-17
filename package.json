@@ -6,8 +6,18 @@
   "directories": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbarrailla/react-screen-onresize-mixin.git"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "babel src --out-dir lib",
+    "prepublish": "rimraf lib && npm run build"
   },
   "keywords": [
     "react",
@@ -30,6 +40,7 @@
     "react": "^0.14.6",
     "react-addons-test-utils": "^0.14.6",
     "react-dom": "^0.14.6",
+    "rimraf": "^2.5.0",
     "sinon": "^1.17.2"
   }
 }
