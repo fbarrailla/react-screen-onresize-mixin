@@ -1,6 +1,6 @@
 {
   "name": "react-screen-onresize-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handle screen resizing with debounce delay.",
   "main": "lib/index.js",
   "directories": {
